@@ -250,21 +250,21 @@ Multiple failed security controls
 Attack Visibility: 9/10
 The attack chain is clearly visible across logs and dashboards, making it highly suitable for SOC training and analysis.
 
-## Key Takeaways
-Legitimate credentials are a major attack vector (T1078)
-Sudo misuse is a clear indicator of privilege escalation
-Proper logging enables full attack reconstruction
-Weak system hardening significantly increases risk
-SIEM visibility is critical for detecting multi-stage attacks
+## Key takeaway (Red Team vs Blue Team understanding)
 
- ## Conclusion
-This lab demonstrates a successful SOC monitoring scenario where a simulated Linux attack was fully detected and mapped using Wazuh.
-The exercise highlights the importance of:
-Monitoring authentication activity
-Detecting privilege escalation attempts
-Maintaining strong system hardening
-Correlating logs to understand attacker behaviour
-Overall, Wazuh proved effective in identifying and classifying the simulated attack while maintaining full endpoint visibility throughout the process.
+This lab helped me clearly understand the relationship between Red Team and Blue Team roles in cybersecurity:
+As a Red Team perspective, I learned how attackers think: identifying entry points, exploiting misconfigurations, and maintaining access through payloads and system interaction.
+As a Blue Team perspective, I saw how every action leaves traces — from suspicious web requests to unusual process execution and file access patterns.
+
+## Why this mattered:
+Red Teaming showed me how breaches happen in practice, not just theory
+Blue Team thinking showed me how those same actions are detected and investigated
+I learned that effective cybersecurity depends on both sides working in balance
+Every attack step I performed could directly map to a detection opportunity in a SIEM like Wazuh
+
+## Final insight
+
+This lab made it clear that cybersecurity isn’t just about attacking or defending — it’s about understanding both perspectives to build stronger detection, response, and prevention strategies.
 
 ## Reproducibility Notes
 To replicate this analysis:
